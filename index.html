@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+
+    <!--IE的降级标签 以支持bootstrap中的box-sizing-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<meta name="viewport" content="width=320,maximum-scale=1.3,user-scalable=no">-->
+
+    <title>艺考级-首页</title>
+
+    <link href="ykj/source/css/bootstrap.css" rel="stylesheet">
+    <link href="ykj/css/index.css" rel="stylesheet">
+
+    <script type="text/javascript" src="ykj/source/js/jquery-1.11.3.min.js" ></script>
+    <script type="text/javascript" src="ykj/source/js/bootstrap.js"></script>
+
+    <script type="text/javascript" src="ykj/js/netconfig.js"></script>
+    <script type="text/javascript" src="ykj/js/revDataLogic.js"></script>
+    <script type="text/javascript" src="ykj/js/net.js"></script>
+    <script type="text/javascript" src="ykj/js/util.js"></script>
+
+    <script type="text/javascript" src="ykj/js/top.js"></script>
+    <script type="text/javascript" src="ykj/js/footer.js"></script>
+    <script type="text/javascript" src="ykj/js/index.js"></script>
+
+</head>
+<body>
+<!--导航-->
+<div id="header"></div>
+<!--焦点图-->
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!--下方的圆点 -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="ykj/images/home/website_01.png" alt="艺考级logo">
+        </div>
+        <div class="item">
+            <img src="ykj/images/home/website_02.png" alt="艺考级logo">
+        </div>
+        <div class="item">
+            <img src="ykj/images/home/website_03.png" alt="艺考级logo">
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">上一张</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">下一张</span>
+    </a>
+</div>
+<!--主要内容-->
+<div id="content">
+    <!--中间内容-->
+    <div class="container">
+        <div class="row">
+            <div class=" col-md-4 col-xs-12">
+                <img class="img-circle" src="ykj/images/home/option_02.png">
+                <h2>模拟试题</h2>
+                <p>模拟真实的考试氛围，百分百还原考场气氛。模拟试题由艺考级邀请中央音乐学院精英教师团队出题更专业更权威。提前带您进入模拟考场，适应考场气氛已应对各种考试问题。<br><br></p>
+                <button class="btn btn-default" onclick="mnt_try_use()">免费测试</button>
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <img class="img-circle" src="ykj/images/home/option_01.png">
+                <h2>单项练习</h2>
+                <p>单项练习针对音基备考中的十几个类型的题目，推出各个类型的专项练习题。通过模拟试题中的成绩报告让你了解自身的优缺点，让您有针对性的进行自我的弱点加强。增强薄弱的环节，巩固优势的地方，大大提高考试的通过率。</p>
+                <button class="btn btn-default" onclick="mnt_try_use()">免费测试</button>
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <img  class="img-circle" src="ykj/images/home/option_03.png">
+                <h2>试唱部分</h2>
+                <p>最贴近考试的视唱模版，让考生提前了解考试标准，训练自己的音准，识谱能力，从而最好的在考试中发挥自己的水平。<br><br> </p>
+                <button class="btn btn-default disabled" style="  border:1px solid #808080 ; color: #808080">即将开放</button>
+            </div>
+        </div>
+    </div>
+    <!--成绩展示-->
+    <div class="container" style="padding: 0px">
+        <div class="page-header" style="text-align: left">
+            <div class="page-header" style="text-align: left">
+                <h3>成绩展示
+                    <small>Academic Report </small>
+                    <!--<a class="btn btn-primary btn-link" role="button" style="display: inline-block;">-->
+                        <!--查看更多</a>-->
+                </h3>
+                <div id="carousel-example-score" class="carousel slide" data-ride="carousel" data-interval="4500">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="ykj/images/home/score_01.png" alt="艺考级logo">
+                        </div>
+                        <div class="item">
+                            <img src="ykj/images/home/score_02.png" alt="艺考级logo">
+                        </div>
+                        <div class="item">
+                            <img src="ykj/images/home/score_03.png" alt="艺考级logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--滚动证书-->
+    <div class="container" style="padding: 0px">
+        <div class="page-header" style="text-align: left">
+            <h3>相关证书
+                <small>Relevant Certificates </small>
+                <!--<a class="btn btn-primary btn-link" role="button" style="display: inline-block">-->
+                    <!--查看更多</a>-->
+            </h3>
+            <!--data-interval = "3500"-->
+            <div id="carousel-example-certificate" class="carousel slide" data-ride="carousel" data-interval="false">
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="ykj/images/home/certificate_1.png" alt="艺考级logo">
+                    </div>
+                    <div class="item">
+                        <img src="ykj/images/home/certificate_2.png" alt="艺考级logo">
+                    </div>
+                    <div class="item">
+                        <img src="ykj/images/home/certificate_3.png" alt="艺考级logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--尾部-->
+<footer id="footer"></footer>
+
+</body>
+</html>

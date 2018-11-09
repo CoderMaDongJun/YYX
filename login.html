@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>艺考级-登录</title>
+    <!--css-->
+    <link href="ykj/source/css/bootstrap.css" rel="stylesheet">
+    <link href="ykj/css/login.css" rel="stylesheet">
+    <!--js-->
+    <script type="text/javascript" src="ykj/js/netconfig.js"></script>
+    <script type="text/javascript" src="ykj/source/js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="ykj/source/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="ykj/js/revDataLogic.js"></script>
+    <script type="text/javascript" src="ykj/js/top.js"></script>
+    <script type="text/javascript" src="ykj/js/util.js"></script>
+    <script type="text/javascript" src="ykj/js/net.js"></script>
+    <script type="text/javascript" src="ykj/js/login.js"></script>
+
+</head>
+<body>
+<div id="header"></div>
+
+<!--面板-->
+<div id="panel">
+    <!--面板的头部-->
+    <div class="panel-header">
+        <h2>欢迎登录艺考级</h2>
+    </div>
+    <!--面板的中间内容-->
+    <div class="panel-content">
+
+        <!--账号输入框-->
+        <div class="user-pwd">
+            <img src="ykj/images/login/icon_people.png">
+            <!--<input id="user_name" placeholder="请输入用户名/手机号" name="user" value="15901433846">-->
+            <input id="user_name" placeholder="请输入用户名/手机号" name="user"  value="">
+
+        </div>
+
+        <!--密码输入框-->
+        <div class="user-pwd">
+            <img src="ykj/images/login/icon_password.png">
+            <!--<input id="user_psd" placeholder="请输入密码" type="password" name="pwd" value="123456">-->
+            <input id="user_psd" placeholder="请输入密码" type="password" name="pwd"  value="">
+        </div>
+
+        <!--默认的设置-->
+        <div class="setting">
+            <label><input type="checkbox"> 下次自动登录</label>
+            <a data-toggle="modal" href="#forgetModal" class="pull-right">忘记/更改密码?</a>
+        </div>
+
+        <!--登录按钮-->
+        <button class="login-btn" onclick="userLogin()">登&nbsp;录</button>
+
+        <!--立即注册-->
+        <div class="reg">
+            还没账号?&nbsp;&nbsp;
+            <a data-toggle="modal" href="#registerModal">立即注册</a>
+        </div>
+
+        <!-- 注册 -->
+        <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="false">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h3 class="modal-title" id="myModalLabel">注册</h3>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="panel">
+                            <div class="panel-body" style="border-right: 1px solid lightgray;height: 100%">
+                                <!--账号输入框-->
+                                <div class="user-pwd">
+                                    <img src="ykj/images/login/icon_people.png">
+                                    <input id="mPhone" placeholder="请输入用户名/手机号" name="user">
+                                </div>
+                                <!--密码输入框-->
+                                <div class="user-pwd">
+                                    <img src="ykj/images/login/icon_password.png">
+                                    <input id="mPassword" type="password" placeholder="请输入密码" name="user">
+                                </div>
+                                <!--密码输入框-->
+                                <div class="user-pwd">
+                                    <img src="ykj/images/login/icon_password.png">
+                                    <input id="againPassword" type="password" placeholder="请再次输入密码" name="user">
+                                </div>
+                                <!--账号验证码-->
+                                <div class="user-pwd" id="code">
+                                    <input id="mcode"  placeholder="请输入验证码" name="user">
+                                    <a onclick="getCode()">获取验证码</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel">
+                            <div class="panel-body" style="text-align: center">
+                                <img class="logo" src="ykj/images/Other/icon.png">
+                            </div>
+                            <div class="panel-body" style="text-align: center">
+                                已有账号?&nbsp;&nbsp;
+                                <a class="loginnow" data-dismiss="modal" style="color: #C1A252;">立即登录</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                            <button class="btn btn-primary btn-lg btn-block btn-register" onclick="setupUserCount()">创建用户</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 忘记/更改密码 -->
+        <div class="modal fade" id="forgetModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="false">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h3 class="modal-title" id="forgetModalLabel">忘记/更改密码</h3>
+                    </div>
+
+                    <div class="modal-body" style="padding: 0">
+                        <div id="myCarousel" class="carousel slide" data-interval="false" data-wrap="false" style="text-align: center">
+                            <!-- 轮播（Carousel）项目 -->
+                            <div class="carousel-inner" style="display: inline-block;width: 70%;margin: 0px;padding: 0px">
+                                <div class="item active">
+                                    <!--账号输入框-->
+                                    <p>确认账号</p>
+                                    <div class="user-pwd">
+                                        <img src="ykj/images/login/icon_people.png">
+                                        <input id="my_phone" placeholder="请输入用户名/手机号" name="user">
+                                    </div>
+                                    <!--账号验证码-->
+                                    <div class="user-pwd" id="code2">
+                                        <input id="my_code" placeholder="请输入验证码" name="user">
+                                        <a onclick="get_forget_Code()">获取验证码</a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <p>重置密码</p>
+                                    <!--账号输入框-->
+                                    <div class="user-pwd">
+                                        <img src="ykj/images/login/icon_password.png">
+                                        <input id="new_password" placeholder="请输入新密码" name="user">
+                                    </div>
+                                    <!--账号输入框-->
+                                    <div class="user-pwd">
+                                        <img src="ykj/images/login/icon_password.png">
+                                        <input id="again_password" placeholder="请再次输入新密码" name="user">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer" style="text-align: center;padding: 10px;margin-top: 0">
+                        <button  class="left btn btn-default btn-register" data-target="#myCarousel"  data-slide="prev" style="width: 40%">上一步</button>
+                        <button id="next_button" class="right btn btn-default btn-register" data-target="#myCarousel"  data-slide="next" style="width: 40%" onclick="isSend()">下一步</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

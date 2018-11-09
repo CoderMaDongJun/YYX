@@ -1,0 +1,289 @@
+
+a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, em, fieldset,
+font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre,
+small, span, strong, u, ul, var{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    background: url("../images/Other/bg.png") ;
+    background-size: cover;
+}
+
+/*内容*/
+#pay_content{
+    /*background-color: red;*/
+    max-width: 1200px;
+    width: 100%;
+}
+
+/*左右侧公用css*/
+.col-xs-5,.col-xs-4{
+    padding: 20px;
+    margin: 15px;
+    min-width: 350px;
+}
+
+.col-sm-3{
+   width: 100px;
+    display: inline-block
+}
+
+.col-sm-9 {
+    width: 160px;
+    display: inline-block
+}
+
+/***************** 左侧--简介 *******************/
+/*左侧块*/
+.col-xs-5{
+    color: white;
+    /*background-color: greenyellow;*/
+}
+
+/*艺考级、温馨提示*/
+#pay_left_top > div,
+#pay_left_bottom > div
+{
+    padding-left: 17px;
+    margin-top: 10px;
+}
+
+/*艺考级*/
+#pay_left_top ul li{
+    margin-bottom: 10px;
+}
+
+/*温馨提示*/
+#pay_left_bottom{
+    margin-top: 50px;
+    color: lightgray;
+}
+/***************** 右侧--支付 *******************/
+.col-xs-4{
+    background-color: white;
+    border-radius: 11px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 180px;
+}
+
+.col-xs-4 > h3{
+    margin:10px 0 ;
+}
+
+.form-group{
+    font-size: 14px;
+    margin: 10px;
+}
+
+#pay_header{
+    background-color: grey;
+    height: 20px;
+    position: relative;
+    margin: -20px -20px 20px;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid grey;
+}
+
+#pay_button{
+    margin-top: 30px;
+}
+
+/*支付完成*/
+.modal-footer{
+    margin-top: 0;
+    text-align: center;
+}
+.modal-footer > button
+{
+    width: 40%;
+}
+
+/*支付二维码页面*/
+#qrcode{
+    display: inline-block;
+    text-align: center;
+    width:200px;
+    height:200px;
+}
+
+#qr_animation{
+    position: absolute;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+
+.sk-cube-grid {
+    width: 40px;
+    height: 40px;
+    margin: 40px auto;
+    /*
+     * Spinner positions
+     * 1 2 3
+     * 4 5 6
+     * 7 8 9
+     */ }
+.sk-cube-grid .sk-cube {
+    width: 33.33%;
+    height: 33.33%;
+    background-color: #333;
+    float: left;
+    -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+    animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; }
+.sk-cube-grid .sk-cube1 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube2 {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube3 {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s; }
+.sk-cube-grid .sk-cube4 {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube5 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube6 {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube7 {
+    -webkit-animation-delay: 0.0s;
+    animation-delay: 0.0s; }
+.sk-cube-grid .sk-cube8 {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube9 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s; }
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+        -webkit-transform: scale3D(1, 1, 1);
+        transform: scale3D(1, 1, 1); }
+    35% {
+        -webkit-transform: scale3D(0, 0, 1);
+        transform: scale3D(0, 0, 1); } }
+
+@keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+        -webkit-transform: scale3D(1, 1, 1);
+        transform: scale3D(1, 1, 1); }
+    35% {
+        -webkit-transform: scale3D(0, 0, 1);
+        transform: scale3D(0, 0, 1); } }
+
+
+/*适配*/
+@media screen and (min-width: 768px){
+    .col-xs-4{
+        margin-right: 30px;
+        float: right;
+    }
+    .col-xs-5{
+        margin-left: 30px;
+        float: left;
+    }
+}
+
+/*iPad*/
+@media screen and (width: 768px){
+    /*左右侧公用css*/
+    .col-xs-5,.col-xs-4{
+        min-width: 738px;
+        margin: 15px;
+        width: 90%;
+    }
+}
+
+/*iPhone 6pluse*/
+@media screen and (width: 414px){
+    /*左右侧公用css*/
+    .col-xs-5,.col-xs-4{
+        min-width: 384px;
+        margin: 15px;
+        width: 90%;
+    }
+    #pay_left_top h1{
+        font-size: 28px;
+    }
+    #pay_left_top h3{
+        font-size: 15px;
+    }
+}
+
+/*Nexus 5X\6P*/
+@media screen and (width: 412px){
+    /*左右侧公用css*/
+    .col-xs-5,.col-xs-4{
+        min-width: 382px;
+        margin: 15px;
+        width: 90%;
+    }
+    #pay_left_top h1{
+        font-size: 28px;
+    }
+    #pay_left_top h3{
+        font-size: 15px;
+    }
+}
+
+/*iPhone 6*/
+@media screen and (width: 375px){
+    /*左右侧公用css*/
+    .col-xs-5,.col-xs-4{
+        min-width: 345px;
+        margin: 15px;
+        width: 90%;
+    }
+    #pay_left_top h1{
+        font-size: 28px;
+    }
+    #pay_left_top h3{
+        font-size: 15px;
+    }
+}
+
+/*Galaxy S5*/
+@media screen and (width: 360px){
+    /*左右侧公用css*/
+    .col-xs-5,.col-xs-4{
+        min-width: 330px;
+        margin: 15px;
+        width: 90%;
+    }
+    #pay_left_top h1{
+        font-size: 28px;
+    }
+    #pay_left_top h3{
+        font-size: 15px;
+    }
+}
+
+/*iPhone 5*/
+@media screen and (width: 320px){
+    /*左右侧公用css*/
+    .col-xs-5,.col-xs-4{
+        min-width: 290px;
+        margin: 15px;
+        width: 90%;
+    }
+    #pay_left_top h1{
+        font-size: 28px;
+    }
+    #pay_left_top h3{
+        font-size: 15px;
+    }
+}

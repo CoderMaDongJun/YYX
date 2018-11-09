@@ -1,0 +1,67 @@
+body{
+    margin-top: 50px;
+}
+
+/*中间主要内容*/
+#content{
+    margin: 20px;
+    /*background-color: red;*/
+}
+
+#content  .container{
+    text-align: center;
+}
+
+#content  .container .row img{
+    width: 140px;
+}
+
+#content  .container .row p{
+    text-align:left;
+    text-indent: 8%;
+}
+
+#content  .container .row button{
+    width: 50%;
+    border:1px solid #C1A252 ;
+    color: #C1A252
+} 
+/*重写属性*/
+.col-xs-12{
+    padding: 10px;
+}
+
+.col-xs-12 p{
+    height: 100px;
+}
+
+.page-header{
+    margin-top: 0px;
+    padding-bottom: 0px;
+    border-bottom: none;
+}
+
+small{
+    padding-left: 10px;
+    border-left: 1px solid black;
+}
+
+/*响应式设计*/
+@media screen and (max-width: 768px){
+
+    h2{
+        font-size: 21px;
+    }
+
+    h3{
+        font-size: 17px;
+    }
+
+    #content  .container .row p{
+        font-size: 12px;
+    }
+
+    .col-xs-12 p{
+        height: auto;
+    }
+}

@@ -1,0 +1,76 @@
+
+/*top的高度是50*/
+/*中间主要内容*/
+#v_body{
+    margin-top: 50px;
+    width: 100%;
+}
+
+#v_body .v_body_top{
+    height: auto;
+    width: 100%;
+    margin: auto;
+}
+#v_body .v_body_top img {
+    width:100%;
+    margin-top: 2px;
+}
+
+#v_body_con {
+    width:100%;
+    text-align: center;
+    display: inline-block;
+    background-color: #f3f3f3;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+#v_body_con .item{
+    width: 380px;
+    height:400px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    background-color: #ffffff;
+    margin-left: 4%;
+    margin-top: 10px;
+    position:relative;
+}
+#v_body_con .item .bg
+{
+    width: 100%;
+}
+#v_body_con .item .bg img
+{
+    width: 100%;
+}
+
+#v_body_con .item h4{
+    text-align: left;
+    margin-left: 5px;
+}
+#v_body_con .item p{
+    text-align: left;
+    margin-left: 5px;
+    color:#546e8a;
+}
+#v_body_con .item .num_price_bg{
+   width: 100%;
+   text-align: left;
+   position:absolute;
+   bottom:10px;
+}
+#v_body_con .item .num_price_bg  .left{
+    display:inline-block;
+    margin-left: 5px;
+}
+#v_body_con .item .num_price_bg  .right{
+    display:inline-block;
+    float: right;
+    margin-right: 5px;
+}
+/*响应式设计*/
+@media screen and (max-width: 768px){
+
+
+}

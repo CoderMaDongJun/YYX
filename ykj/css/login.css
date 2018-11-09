@@ -1,0 +1,332 @@
+a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    /*设置背景颜色*/
+    /*background: url("../images/bg1.png") no-repeat;*/
+    /*设置背景的尺寸*/
+    background-size: cover;
+
+    text-align: center;
+}
+
+/*面板*/
+#panel{
+    width: 360px;
+    background-color: white;
+    /*改变标签的类型*/
+    display: inline-block;
+    /*重写*/
+    text-align: left;
+    /*上边距*/
+    margin-top: 150px;
+    /*设置内边距*/
+    padding: 20px;
+
+    border-radius: 5px;
+    box-shadow: -10px 20px 100px black;
+}
+
+.panel-header h2{
+    font-size: 22px;
+    font-weight: normal;
+    text-align: center;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+    /*下划线*/
+    border-bottom: 1px solid #dddddd;
+}
+
+/*中间的主要内容*/
+.panel-content{
+
+}
+
+.panel-content .user-pwd{
+    margin-bottom: 15px;
+    height: 40px;
+    position: relative;
+}
+
+.panel-content .user-pwd img{
+    position: absolute;
+    top: 7px;
+    left: 6px;
+}
+
+.panel-content .user-pwd input{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    /*设置内边距*/
+    padding-left: 38px;
+    border-radius: 5px;
+    border:1px solid #dddddd;
+}
+
+.panel-content .user-pwd input:focus{
+    outline: none;
+    border: 1px solid #C1A252;
+    box-shadow: 0 0 5px #C1A252;
+}
+
+#code input,
+#code2 input{
+    padding-left: 6px;
+    padding-right: 60px;
+}
+
+#code a,
+#code2 a{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 2px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #C1A252;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+}
+
+.login-btn:hover,
+#code2 a:hover,
+#code a:hover{
+    background-color: #C1A252;
+}
+
+.setting a,
+.setting label{
+    font-weight: normal;
+    color: darkgray;
+    font-size: 13px;
+}
+
+.setting a.pull-right{
+    float: right;
+}
+
+/*按钮*/
+.login-btn
+{
+    margin: 15px 0;
+    width: 100%;
+    height: 38px;
+    background-color: #C1A252;
+    /*去除边框*/
+    border: 0;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn-register{
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #C1A252;
+    font-size: 20px;
+}
+
+.login-btn:focus,
+.btn-register:hover,
+.btn-register:focus,
+.btn-register:active:focus{
+    outline: none;
+    border: 1px solid #C1A252;
+    color: #C1A252;
+    background-color: white;
+}
+
+.reg{
+    text-align: center;
+    margin-bottom: 15px;
+    color: darkgray;
+    font-size: 10px;
+}
+
+.reg a{
+    font-size: 10px;
+    color: #C1A252;
+}
+
+/*尾部*/
+.panel-footer{
+    /*background-color: red;*/
+    height: 44px;
+    line-height: 44px;
+}
+
+.panel-footer img{
+    width: 30px;
+    /*图片居中*/
+    vertical-align: middle;
+}
+
+/*重写css*/
+.modal-title{
+    color: #C1A252;
+}
+.modal-footer{
+    text-align: left;
+}
+
+#myModal .modal-body
+{
+    text-align: center;
+    /*background-color: yellow;*/
+    padding: 5px;
+    margin: 0;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+
+#registerModal .panel,
+#forgetModal .panel
+{
+    box-shadow: none;
+    border-radius: 0;
+    border-bottom: none;
+    height: 100%;
+    text-align: left;
+    width: 47%;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.loginnow{
+    font-size: 20px;
+}
+
+#registerModal .modal-footer
+{
+    margin: 0;
+    padding: 5px;
+}
+
+/*忘记密码*/
+.mod{
+    display: none;
+}
+
+#forgetModal .item p{
+    margin: 5px;
+    color: #C1A252;
+    font-size: 16px;
+}
+
+.modal-header h3{
+    text-align: center;
+}
+
+/*响应式设计*/
+@media screen and (max-width: 768px){
+
+    body{
+        /*设置背景颜色*/
+        /*background: url("../images/bg1.png") no-repeat;*/
+        /*设置背景的尺寸*/
+        padding: 0 7%;
+        text-align: center;
+        font-size: 13px;
+    }
+
+    /*面板*/
+    #panel{
+        width: 100%;
+        height: auto;
+        display: block;
+        position: relative;
+        min-height: 1px;
+    }
+
+    .panel-body {
+        padding: 3px 12px;
+        border-right: 0 !important;
+    }
+
+    .panel-header h2{
+        font-size: 16px;
+        font-weight: normal;
+        text-align: center;
+        padding-bottom: 15px;
+        margin-bottom: 13px;
+        /*下划线*/
+        border-bottom: 1px solid #dddddd;
+    }
+
+    .setting a.pull-right{
+        margin-top: 5px;
+    }
+
+    .setting a,
+    .setting label{
+        font-size: 12px;
+    }
+
+    .login-btn
+    {
+        font-size: 17px;
+    }
+
+    #registerModal .panel,
+    #forgetModal .panel
+    {
+        width: 100%;
+    }
+
+    .modal-header {
+        padding: 10px 15px;
+    }
+
+    h3{
+        font-size: 18px;
+    }
+
+    .modal-dialog{
+        padding: 21% 1%;
+    }
+
+    .modal-body {
+        position: relative;
+        padding: 10px 10px;
+    }
+
+    .logo{
+        width: 70px;
+        height: 67px;
+    }
+
+    .loginnow{
+        font-size: 17px;
+    }
+
+    #registerModal .modal-footer {
+        padding: 6px 50px;
+    }
+
+    #forgetModal .item p {
+        font-size: 15px;
+    }
+
+    .btn-register {
+        font-size: 17px;
+    }
+}

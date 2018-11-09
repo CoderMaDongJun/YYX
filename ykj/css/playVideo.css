@@ -1,0 +1,200 @@
+/*通用设置*/
+a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover,
+a:focus{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    background-color: #f3f3f3;
+}
+/************************* common<公用css> ************************/
+
+/************************* v_body<路径索引、视频栏> ************************/
+/* v_body,中间内容块 */
+#v_body{
+    margin-top: 50px;
+    padding: 10px;
+    background-color: #f3f3f3;
+}
+
+/*路径索引*/
+#v_body_path,
+#v_body_title,
+.bd{
+    padding-left: 0;
+}
+
+/* ol */
+.bd{
+    margin: 0;
+}
+
+/************************* v_body<视频栏> ************************/
+/* 视频栏 */
+#v_body_video{
+    /*background-color: white;*/
+    margin-top: 20px;
+}
+
+/* left:视频 */
+#v_body_video .row .col-md-9,
+#v_body_video .row .col-md-3{
+    margin: 0 ;
+    height: 460px;
+}
+
+/* right:视频详情 */
+#v_body_video .row .col-md-3{
+    padding: 0 ;
+}
+
+/* 曲目、曲目信息:top */
+#v_body_video .col-md-3 ul{
+    border: 1px solid lightgray;
+}
+
+/* 曲目、曲目信息 */
+#v_body_video .row .col-md-3 ul li a{
+    border: none;
+    border-radius: 0;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+/* 曲目、曲目信息 hover效果*/
+#v_body_video .row .col-md-3 ul li a:hover{
+    background-color: #f3f3f3;
+}
+
+/* 曲目、曲目信息 选中效果*/
+#v_body_video .row .col-md-3 ul li a.active
+{
+    color: white;
+    background-color: #C1A252;
+}
+
+/************************* 曲目信息内容块 *****************************/
+#v_body_video .col-md-3 .tab-content{
+    height: 90.5%;
+}
+
+#song_Info,#song{
+    background-color: white;
+    height:100%;
+}
+
+/* 头像、名字、职位*/
+#song_Info_top{
+    height: 110px;
+    margin: 20px 0 10px 0;
+}
+
+/* 头像,名字、职位 */
+#info_icon_left,
+#info_icon_right{
+    /*background-color: red;*/
+    display: inline-block;
+    height: 110px;
+}
+
+/* 头像 */
+#info_icon_left{
+    width: 44%;
+    text-align: center;
+}
+
+/* 名字、职位 */
+#info_icon_right{
+    width: 53%;
+    position: relative ;
+    top: -37px;
+    padding-left: 10px;
+}
+
+/* 职位 */
+#info_icon_right div p{
+    background-color: #C1A252;
+    margin-top: 5px;
+    color: white;
+    padding: 2px 8px 2px 8px;
+    border-radius: 15px;
+    font-size: 9px;
+}
+
+/* song_Info_middle */
+#song_Info_middle{
+    text-indent: 8%;
+    padding: 10px;
+}
+
+/* song_Info_bottom */
+#song_Info_bottom{
+    padding: 0 5px;
+}
+
+#song_Info_bottom h4{
+    padding:15px 0 0 0;
+    border-top: 1px solid black;
+}
+
+#song_Info_bottom ol {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+/************************* 曲目内容块 *****************************/
+#song{
+    padding: 5px;
+}
+
+.list-group-item:first-child{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.list-group-item:last-child{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0 ;
+}
+
+a.list-group-item:hover,
+a.list-group-item:focus {
+    text-decoration: none;
+    background-color: white;
+}
+
+a.list-group-item.active,
+a.list-group-item.active:hover,
+a.list-group-item.active:focus,
+a.list-group-item.active .list-group-item-text,
+a.list-group-item.active:hover .list-group-item-text,
+a.list-group-item.active:focus .list-group-item-text
+{
+    color: #C1A252;
+    background-color: white;
+    border-color: #ddd;
+}
+
+/************************* 适配 *****************************/
+@media screen and (max-width: 768px){
+    #v_body_video .row .col-md-9,
+    #v_body_video .row .col-md-3
+    {
+        height: auto;
+    }
+}

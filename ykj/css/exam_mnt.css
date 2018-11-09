@@ -1,0 +1,377 @@
+a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, em, fieldset,
+font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre,
+small, span, strong, u, ul, var{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #F9F9F9;
+}
+
+/*试题区*/
+#content {
+    max-width:1081px;
+    width: 100%;
+    display: inline-block;
+    /*background-color: red;*/
+}
+
+/*试题区上部路径*/
+#content .bd {
+    margin-top:100px;
+    text-align: left;
+    /*background-color: greenyellow;*/
+}
+
+/*试题内卡片区*/
+#s1{
+    /*background-color: green;*/
+    margin: 0 ;
+    padding: 10px 10px 10px 12px;
+    text-align: center;
+}
+
+/* 盛放单个卡片*/
+.col-xs-3 {
+    width:264px;
+    height: 330px;
+    position: relative;
+    padding: 15px;
+    /*background-color: yellow;*/
+}
+
+/*单个卡片*/
+.white_card {
+    height: 100%;
+    background-color: #ffffff ;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/*单个卡片内:标题*/
+.white_card h4{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/*单个卡片内:答题分数圆圈*/
+.white_card table{
+    text-align: center;
+    margin-top: 24px;
+    /*margin-bottom: 0 ;*/
+}
+
+/*单个卡片内:满分*/
+.white_card p.my_score {
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+/*单个卡片内:答题时间*/
+.white_card .my_time {
+    font-size: 20px;
+}
+
+/*单个卡片内:开始答题*/
+.white_card a.start_button,
+.white_card a.my_start_button{
+    margin-top: 15px;
+    border-radius: 10px;
+    background-color: white;
+    border:1px solid #Bf9f4e ;
+    color: #Bf9f4e;
+}
+
+/*card2-开始答题*/
+.white_card a.start_button{
+    margin-top: 25px;
+}
+
+/*card1、card2 效果*/
+.white_card a.start_button:hover,
+.white_card a.my_start_button:hover,
+.my_checkButton:hover{
+    background-color: #Bf9f4e;
+    border:1px solid  ;
+    color: white;
+}
+
+/* card1:答对、答错-top*/
+.white_card tr td.middle_note{
+    border-top: 0;
+    color: red ;
+    width:50%;
+    padding: 0;
+}
+
+/*card1:答对、答错-bottom*/
+.white_card tr td.middle_answer{
+    border-top: 0;
+    font-size: 12px;
+    color: #000000;
+    width:50%;
+    padding: 0
+}
+
+/* 查看试卷 */
+.my_checkButton
+{
+    border-radius: 10px;
+    background-color: #ffffff;
+    border:1px solid #000000 ;
+    color: #000000;
+}
+
+/*适配*/
+@media screen and (max-width: 767px){
+    body{
+        background-color: #f3f3f3;
+    }
+
+    /*路径索引*/
+    #content .bd{
+        display: none;
+    }
+
+    /*卡片外观*/
+    #s1{
+        margin-top: 60px;/* 距离顶部*/
+    }
+
+    /*卡片内--套题名字*/
+    .col-xs-3 h4{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (width: 768px){
+    /*卡片外观*/
+    #s1{
+        padding-left: 120px;
+    }
+}
+
+@media screen and (min-width: 412px) and (max-width: 414px){
+    /* 盛放卡片的容器*/
+    #s1{
+        padding-left: 20px;
+    }
+
+    /* 卡片内 */
+    .col-xs-3 {
+        width: 372px;
+        height: 437px;
+    }
+
+    /* 套题名字 */
+    .col-xs-3 h4{
+        font-size: 23px;
+    }
+
+    /* 开始答题、检查试卷*/
+    .white_card a.my_start_button,
+    .white_card a.start_button,
+    .white_card a.my_checkButton{
+        font-size: 22px;
+    }
+
+    /* card1：答对、答错 */
+    .white_card tr td.middle_note,
+    .white_card tr td.middle_answer{
+        font-size: 16px;
+    }
+
+    /* card1:开始答题 */
+    .white_card a.my_start_button{
+        margin-top: 45px;
+        margin-bottom: 20px;
+    }
+
+    /* card2 */
+    /* 满分 */
+    .white_card p.my_score {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-size: 19px;
+    }
+
+    /* 答题时间 */
+    .white_card p.my_time {
+        font-size: 24px;
+    }
+
+    /* 开始答题 */
+    .white_card a.start_button{
+        margin-top: 38px;
+    }
+}
+
+@media screen and (width: 375px){
+    /* 盛放卡片的容器*/
+    #s1{
+        padding-left: 15px;
+    }
+
+    /* 卡片内 */
+    .col-xs-3 {
+        width: 345px;
+        height: 406px;
+    }
+
+    /* 套题名字 */
+    .col-xs-3 h4{
+        font-size: 20px;
+    }
+
+    /* 开始答题、检查试卷*/
+    .white_card a.my_start_button,
+    .white_card a.start_button,
+    .white_card a.my_checkButton{
+        font-size: 19px;
+    }
+
+    /* card1：答对、答错 */
+    .white_card tr td.middle_note,
+    .white_card tr td.middle_answer{
+        font-size: 13px;
+    }
+
+    /* card1:开始答题 */
+    .white_card a.my_start_button{
+        margin-top: 35px;
+        margin-bottom: 18px;
+    }
+
+    /* card2 */
+    /* 满分 */
+    .white_card p.my_score {
+        margin-top: 15px;
+        margin-bottom: 25px;
+        font-size: 16px;
+    }
+
+    /* 答题时间 */
+    .white_card p.my_time {
+        font-size: 21px;
+    }
+
+    /* 开始答题 */
+    .white_card a.start_button{
+        margin-top: 30px;
+    }
+
+}
+
+@media screen and (width: 360px){
+    /* 盛放卡片的容器*/
+    #s1{
+        padding-left: 15px;
+    }
+
+    /* 卡片内 */
+    .col-xs-3 {
+        width: 330px;
+        height: 389px;
+    }
+
+    /* 套题名字 */
+    .col-xs-3 h4{
+        font-size: 20px;
+    }
+
+    /* 开始答题、检查试卷*/
+    .white_card a.my_start_button,
+    .white_card a.start_button,
+    .white_card a.my_checkButton{
+        font-size: 19px;
+    }
+
+    /* card1：答对、答错 */
+    .white_card tr td.middle_note,
+    .white_card tr td.middle_answer{
+        font-size: 13px;
+    }
+
+    /* card1:开始答题 */
+    .white_card a.my_start_button{
+        margin-top: 20px;
+        margin-bottom: 13px;
+    }
+
+    /* card2 */
+    /* 满分 */
+    .white_card p.my_score {
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    /* 答题时间 */
+    .white_card p.my_time {
+        font-size: 21px;
+    }
+
+    /* 开始答题 */
+    .white_card a.start_button{
+        margin-top: 20px;
+    }
+}
+
+
+@media screen and (width: 320px){
+    /* 盛放卡片的容器*/
+    #s1{
+        padding-left: 5px;
+    }
+
+    /* 卡片内 */
+    .col-xs-3 {
+        width: 310px;
+        height: 365px;
+    }
+
+    /* 套题名字 */
+    .col-xs-3 h4{
+        font-size: 18px;
+    }
+
+    /* 开始答题、检查试卷*/
+    .white_card a.my_start_button,
+    .white_card a.start_button,
+    .white_card a.my_checkButton{
+        font-size: 17px;
+    }
+
+    /* card1：答对、答错 */
+    .white_card tr td.middle_note,
+    .white_card tr td.middle_answer{
+        font-size: 11px;
+    }
+
+    /* card1:开始答题 */
+    .white_card a.my_start_button{
+        margin-top: 16px;
+        margin-bottom: 13px;
+    }
+
+    /* card2 */
+    /* 满分 */
+    .white_card p.my_score {
+        font-size: 14px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    /* 答题时间 */
+    .white_card p.my_time {
+        font-size: 19px;
+    }
+
+    /* 开始答题 */
+    .white_card a.start_button{
+        margin-top: 20px;
+    }
+}

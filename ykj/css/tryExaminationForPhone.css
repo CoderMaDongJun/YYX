@@ -1,0 +1,810 @@
+
+/*/!*响应式设计*!/*/
+@media screen and (max-width: 768px) {
+    /*通用设置*/
+    a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    a:hover, a:focus {
+        color: #2a6496;
+        text-decoration: none;
+
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    /************************* header ************************/
+
+    .progress{
+        display: inline-block;
+        width: 77%;
+        height: 30px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .progress-bar{
+        padding-top: 6px;
+        /*width: 95%;*/
+        font-size: 16px;
+        background-color: #C1A252;
+    }
+
+    .header label{
+        display: inline-block;
+        width: 50px;
+        color: #C1A252;
+        height: 30px;
+        line-height: 30px;
+        position: relative;
+        /*top:-10px;*/
+        top: -12px;
+        /*left: 10px;*/
+        text-align: center;
+        font-size: 17px;
+    }
+
+
+
+
+    .header {
+        text-align: center;
+        padding: 10px 0;
+        font-size: 15px;
+        border-bottom: 1px solid #F2F2F2;
+    }
+
+    .header span {
+        display: inline-block;
+        background-color: #F2F2F2;
+        width: 35%;
+        border-radius: 20px;
+        font-size: 22px;
+        margin-bottom: 5%;
+    }
+
+    .header span b {
+        font-weight: normal;
+        color: #BF9F4E;
+        font-size: 25px;
+    }
+
+
+    /*/!*未选提示图片*!/*/
+    /*#undo_img{*/
+        /*border: none;*/
+        /*width: 60px;*/
+        /*position: absolute;*/
+        /*top: 20px;*/
+        /*right: 20px;*/
+    /*}*/
+
+    #undo_img{
+    /*border: none;*/
+        width: 60px;
+        margin: auto;
+    /*position: absolute;*/
+    /*top: 20px;*/
+    /*right: 20px;*/
+    }
+
+
+    /************************* content ************************/
+    .carousel-inner > .item {
+        -webkit-transition: 0.2s ease-in-out left;
+        transition: 0.2s ease-in-out left;
+    }
+
+    /*标题部分*/
+    .contentHeader {
+        /*margin-top: 15px;*/
+        /*padding: 10px 10px 5px;*/
+        text-align: center;
+        padding-top: 8%;
+        /*padding-left: 10%;*/
+    }
+
+    /*标题*/
+    h4 {
+        text-align: left;
+        padding-left: 3%;
+        padding-right: 5%;
+    }
+
+    /*标题图片*/
+    .contentHeader img {
+        /*width: 90%;*/
+        /*width: 50%;*/
+        /*margin: 15px 20px 0px 20px;*/
+        margin: 7% 1% 1% 1%;
+        /*padding-top: 9%;*/
+        border: 1px solid #DBDBDB;
+    }
+
+    /*选项区*/
+    .contentFooter {
+        /*margin-top: 20px;*/
+        padding-top: 5%;
+        width: 100%;
+    }
+
+    /*选项行*/
+    .myrow {
+        display: inline-block;
+        width: 100%;
+        /*height: 120px;*/
+        height: auto;
+        /*padding: 5px 5px 5px 0px;*/
+        padding-top: 5%;
+        padding-bottom: 5%;
+        /*padding-left: 5%;*/
+        padding-left: 2%;
+        text-align: center;
+    }
+
+    /*单个选项*/
+    .myOption {
+        display: inline-block;
+        /*width: 160px;*/
+        width: 40%;
+        height: 100%;
+        text-align: left;
+        /*-webkit-transition:0.25s;*/
+    }
+
+    /*.myOption :hover{*/
+    /*-webkit-transform-origin: center ;*/
+    /*-webkit-transform:scale(1.05);*/
+    /*}*/
+    /* 单个选项左侧A、B、C、D */
+    .myOption a {
+        background-color: #F2F2F2;
+        color: black;
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        line-height: 30px;
+        font-size: 15px;
+        position: absolute;
+        text-align: center;
+    }
+
+    .myOption a.select {
+        color: white;
+        background-color: #BF9F4E;
+    }
+
+
+    /** 选项块右侧标签--字选项 *!/*/
+    .myOption > label
+    {
+        color: black;
+        margin-left: 10px;
+        font-size: 17px;
+        font-weight: normal;
+    }
+
+    /*选项块左侧，对、错图片*/
+    .myOption a img{
+        width: 100%;
+        position: absolute;
+        left: 0;
+    }
+
+    /* 单个选项右侧背景图片 */
+    .option_bg {
+        display: inline-block;
+        text-align: center;
+        width: 80%;
+        margin-left: 23%;
+        background: url("../images/tryExam/exercise_bg.png");
+        /*background-size: cover;*/
+        background-size: 30%;
+        border: 1px solid #DBDBDB;
+    }
+
+    /*单个选项右侧图片*/
+    .option_bg img {
+        width: 100%;
+    }
+
+    /*单个选项右侧文字*/
+    .myOption .textOption {
+        font-size: 18px;
+        /*margin-left: 50px;*/
+        margin-left: 30%;
+        padding-top: 1%;
+    }
+
+    /*以下类型5-6*/
+    /*选项区*/
+    .myOption2 {
+        line-height: 100%;
+        padding: 5% 3%;
+        /*padding-top: 8%;*/
+        /*padding-left: 10%;*/
+        /*margin: 30px 10px;*/
+        text-align: left;
+        /*-webkit-transition:0.25s;*/
+    }
+
+    /*!* 选项区特效 *!*/
+    /*.myOption2 :hover{*/
+    /*-webkit-transform-origin: center ;*/
+    /*-webkit-transform:scale(1.05);*/
+    /*}*/
+    /* 选项区a标签 */
+    .myOption2 a {
+
+        /*background-color: #F2F2F2;*/
+        /*color: black;*/
+        /*width: 30px;*/
+        /*height: 30px;*/
+        /*border-radius: 15px;*/
+        /*line-height: 30px;*/
+        font-size: 15px;
+        position: absolute;
+        /*text-align: center;*/
+
+
+        display: inline-block;
+        background-color: #F2F2F2;
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 15px;
+        color: black;
+        /*margin-right: 3px;*/
+        /*margin-left: 5%;*/
+    }
+
+    /*选项块左侧，对、错图片*/
+    .myOption2 a img{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        border: none;
+    }
+
+    /* 选强区文字选项 */
+    .myOption2 label {
+        color: black;
+        /*margin-left: 10px;*/
+        margin-left: 9%;
+        font-size: 17px;
+        font-weight: normal;
+    }
+
+    /* 选项区图片选项 */
+    .myOption2 img {
+        margin-top: 0%;
+        width: 88%;
+        /* height: 100%; */
+        border: 1px solid #DBDBDB;
+        margin-left: 10%;
+    }
+
+    /* 选项区选中效果 */
+    .myOption2 .select {
+        color: white;
+        background-color: #BF9F4E;
+    }
+
+    /*答题结果展示区*/
+    #result {
+        padding: 0 10px;
+    }
+
+    #resultHeader {
+        margin-top: 5px;
+        padding-top: 3%;
+        /*height: 40px;*/
+        height: auto;
+        /*border-bottom: 1px solid #DBDBDB;*/
+    }
+
+    #resultHeader span {
+        margin: 0 10px;
+    }
+
+    #resultHeader label {
+        font-size: 19px;
+        font-weight: normal;
+    }
+
+    #resultWrong {
+        padding-left: 3px;
+    }
+
+    #resultFooter {
+        /*margin-top: 10px;*/
+        padding: 10px;
+        /*margin: 0px;*/
+        height: 100%;
+    }
+
+    #resultFooter tr {
+        text-align: center;
+    }
+
+    #resultFooter td {
+        height: 50px
+    }
+
+    #resultFooter label {
+        font-size: 20px;
+        font-weight: normal;
+        color: #363636;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 20px;
+        border: 1px solid #363636;
+    }
+
+    #resultFooter .right {
+        /*font-size: 12px;*/
+        font-size: 20px;
+        color: #8FD33F;
+        border: 1px solid #8FD33F;
+    }
+
+    #resultFooter .wrong {
+        color: #FF5D69;
+        border: 1px solid #FF5D69;
+    }
+
+    /************************* footer *****************************************/
+    .footer {
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        border-top: 1px solid #F2F2F2;
+    }
+
+    .footer a, #again {
+        display: inline-block;
+        /*width: 120px;*/
+        width: 33%;
+        height: 40px;
+        line-height: 40px;
+        color: black;
+        /*margin-right: 20px;*/
+        margin-left: 5%;
+        margin-right: 2%;
+        background-color: #F2F2F2;
+        border: 1px solid #F2F2F2;
+        font-size: 20px;
+        border-radius: 5px;
+        /*-webkit-transition:0.25s;*/
+    }
+
+    #resultFooter a {
+        width: 200px;
+        border: none;
+        font-size: 16px;
+    }
+
+    #placeholder{
+        height: 120px;
+    }
+
+}
+
+
+
+
+
+
+
+
+/*/!*响应式设计*!/*/
+@media screen and (max-width: 320px) {
+
+    /*单个选项右侧文字*/
+    .myOption .textOption {
+        font-size: 15px;
+        padding-top: 5%;
+    }
+
+}
+/*/!*通用设置*!/*/
+/*a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, em, fieldset, font, form, h1, h2, h4, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var{*/
+    /*padding: 0;*/
+    /*margin: 0;*/
+/*}*/
+
+/*a{*/
+    /*text-decoration: none;*/
+/*}*/
+
+/*a:hover,*/
+/*a:focus{*/
+    /*text-decoration: none;*/
+/*}*/
+
+/*ul{*/
+    /*list-style: none;*/
+/*}*/
+
+/*body{*/
+    /*background-color: #f3f3f3;*/
+/*}*/
+
+/*/!************************* common<公用css> ************************!/*/
+/*/!*翻页时间*!/*/
+/*.carousel-inner > .item {*/
+    /*-webkit-transition: 0.2s ease-in-out left;*/
+    /*transition: 0.2s ease-in-out left;*/
+/*}*/
+
+/*#examination .examination-header,*/
+/*#examination-body-slide*/
+/*{*/
+    /*display: inline-block;*/
+    /*width: 700px;*/
+    /*padding: 5px;*/
+/*}*/
+
+/*/!************************* examination<试题区> ************************!/*/
+/*#examination{*/
+    /*display: inline-block;*/
+    /*background-color: white;*/
+    /*text-align: left;*/
+    /*border: 1px solid #DBDBDB;*/
+    /*padding: 10px;*/
+    /*width: 1080px;*/
+    /*min-height: 430px;*/
+    /*position: relative;*/
+    /*border-radius: 5px*/
+/*}*/
+
+/*/!************************* examination-header<进度条> ************************!/*/
+/*/!*进度条和时间部分*!/*/
+/*#examination .examination-header {*/
+    /*height: 50px;*/
+    /*padding: 10px;*/
+    /*text-align: left;*/
+/*}*/
+
+/*/!*进度条*!/*/
+/*#examination .examination-header .progress{*/
+    /*display: inline-block;*/
+    /*width: 90%;*/
+    /*height: 25px;*/
+    /*padding: 0;*/
+    /*margin: 0;*/
+/*}*/
+
+/*/!*进度值*!/*/
+/*#examination .examination-header .progress-bar{*/
+    /*min-width: 25px;*/
+    /*background-color: #C1A252;*/
+    /*line-height: 25px;*/
+/*}*/
+
+/*/!*时间*!/*/
+/*#examination .examination-header label{*/
+    /*display: inline-block;*/
+    /*width: 50px;*/
+    /*color: #C1A252;*/
+    /*height: 30px;*/
+    /*line-height: 30px;*/
+    /*position: relative;*/
+    /*top:-10px;*/
+    /*left: 10px;*/
+    /*text-align: center;*/
+/*}*/
+
+/*/!************************* contentHeader<包括标题、选项部分> ************************!/*/
+/*#examination_body-slide{*/
+    /*background: url("../images/tryExam/ykj_log.png");*/
+    /*text-align: left;*/
+    /*width: 640px;*/
+    /*margin-top: 10px;*/
+    /*min-height: 350px;*/
+    /*border-radius: 6px;*/
+    /*border: 1px;*/
+    /*border-color: #d7d7d7;*/
+/*}*/
+
+/*/!************************* contentHeader<标题部分> ************************!/*/
+/*/!*标题部分*!/*/
+/*.contentHeader*/
+/*{*/
+    /*display: inline-block;*/
+    /*width: 100%;*/
+    /*/!*background-color: #5CB85C;*!/*/
+    /*padding: 5px;*/
+    /*text-align: center;*/
+/*}*/
+
+/*/!*标题*!/*/
+/*.contentHeader >h4{*/
+    /*text-align: left;*/
+/*}*/
+
+/*/!*标题内'播放器'图片*!/*/
+/*.contentHeader >h4>img{*/
+    /*width: 40px;*/
+/*}*/
+
+/*/!*标题图片*!/*/
+/*.contentHeader > img{*/
+    /*margin-top: 10px*/
+/*}*/
+
+/*/!*未选提示图片*!/*/
+/*#undo_img{*/
+    /*border: none;*/
+    /*width: 60px;*/
+    /*position: absolute;*/
+    /*top: 20px;*/
+    /*right: 20px;*/
+/*}*/
+
+/*/!************************* contentFooter<选项区> ************************!/*/
+/*/!*选项区部分*!/*/
+/*.contentFooter{*/
+    /*display: inline-block;*/
+    /*width: 100%;*/
+    /*/!*background-color: greenyellow;*!/*/
+    /*margin-top: 10px;*/
+    /*text-align: center;*/
+/*}*/
+
+/*/!*选项块A、B、C、D*!/*/
+/*.contentFooter > .myOption*/
+/*{*/
+    /*/!*background-color: maroon;*!/*/
+    /*margin: 20px 8px;*/
+    /*padding: 2px;*/
+    /*text-align: left;*/
+/*}*/
+
+/*/!* 选项块左侧标签--A、B、C、D *!/*/
+/*.contentFooter > .myOption > a*/
+/*{*/
+    /*display: inline-block;*/
+    /*background-color:#F2F2F2;*/
+    /*border: 1px solid #F2F2F2;*/
+    /*height: 30px;*/
+    /*width: 30px;*/
+    /*line-height: 30px;*/
+    /*text-align: center;*/
+    /*border-radius: 15px;*/
+    /*color: black;*/
+    /*margin-right: 3px;*/
+    /*position: relative;*/
+/*}*/
+
+/*/!* 选项块左侧标签--A、B、C、D效果1 *!/*/
+/*.contentFooter > .myOption > a:hover{*/
+    /*border: 1px solid #C1A252;*/
+/*}*/
+
+/*/!* 选项块左侧标签--A、B、C、D效果2 *!/*/
+/*.contentFooter >.myOption a.dis:hover,*/
+/*.contentFooter >.myOption a.dis{*/
+    /*border: none;*/
+/*}*/
+
+/*/!* 选项块右侧标签--字选项 *!/*/
+/*.contentFooter > .myOption > label*/
+/*{*/
+    /*color: black;*/
+    /*margin-left: 10px;*/
+    /*font-size: 17px;*/
+    /*font-weight: normal;*/
+/*}*/
+
+/*/!*选项块左侧，对、错图片*!/*/
+/*.contentFooter > .myOption a img{*/
+    /*width: 100%;*/
+    /*position: absolute;*/
+    /*left: 0;*/
+/*}*/
+
+/*/!* 选项块部分，选中效果 *!/*/
+/*.contentFooter > .myOption .select*/
+/*{*/
+    /*color: white;*/
+    /*background-color:#C1A252;*/
+/*}*/
+
+/*/!************************* 上一题、下一题 ************************!/*/
+/*/!*上一题、下一题 背景*!/*/
+/*#examination_body_click{*/
+    /*/!*background-color: darkmagenta;*!/*/
+    /*text-align: center;*/
+    /*padding:0 10px;*/
+    /*display: inline-block;*/
+    /*position: absolute;*/
+    /*width: 65px;*/
+    /*right: 363px;*/
+    /*top: 110px;*/
+/*}*/
+
+/*/!*!*上一题或下一题*!*!/*/
+/*#examination_body_click > a*/
+/*{*/
+    /*display: inline-block;*/
+    /*width: 100%;*/
+    /*height: 45%;*/
+    /*font-size: 25px;*/
+    /*margin: 10px 0;*/
+    /*color: #C1A252;*/
+    /*background-color: white;*/
+    /*border: 1px solid #C1A252;*/
+/*}*/
+
+/*/!*上一题或下一题--效果1*!/*/
+/*#examination_body_click > a:hover,*/
+/*#examination_body_click > a:focus*/
+/*{*/
+    /*color: white;*/
+    /*background-color: #C1A252;*/
+    /*border: 1px solid #C1A252;*/
+/*}*/
+
+/*/!*已提交的动画*!/*/
+/*#examination_body_click a.disabledAnimation{*/
+    /*color: lightgray;*/
+    /*border: 1px solid lightgray;*/
+    /*cursor: default;*/
+    /*background-color: white;*/
+    /*animation:disableRotateAnimation 0.5s;*/
+    /*animation-iteration-count:1;*/
+/*}*/
+
+/*/!*已提交--效果1*!/*/
+/*#examination_body_click a.disabledAnimation:hover,*/
+/*#examination_body_click a.disabledAnimation:focus*/
+
+/*{*/
+    /*background-color: white;*/
+/*}*/
+
+/*/!*提交翻转动画*!/*/
+/*.commitAnimation {*/
+    /*animation:commitRotateAnimation 0.5s;*/
+    /*animation-iteration-count:1;*/
+/*}*/
+
+/*/!****************************** 答题结果展示区 ***************************!/*/
+/*/!*右侧展示块*!/*/
+/*#examination_result{*/
+    /*position: absolute;*/
+    /*width: 340px;*/
+    /*height: 410px;*/
+    /*top: 10px;*/
+    /*right: 10px;*/
+    /*padding: 5px;*/
+    /*border: 1px solid #DBDBDB;*/
+/*}*/
+
+/*/!*展示块内--顶部*!/*/
+/*#result_Header*/
+/*{*/
+    /*height: 40px;*/
+    /*line-height: 40px;*/
+    /*border-bottom: 1px solid #DBDBDB;*/
+    /*text-align: center;*/
+/*}*/
+
+/*/!*顶部内，得分、答对、答错、未做4个子模块*!/*/
+/*#result_Header span*/
+/*{*/
+    /*margin: 0 10px;*/
+/*}*/
+
+/*/!*子模块内的文字*!/*/
+/*#result_Header label*/
+/*{*/
+    /*font-size: 18px;*/
+    /*font-weight: normal;*/
+/*}*/
+
+/*/!*展示块内内容*!/*/
+/*#result_Footer*/
+/*{*/
+    /*padding: 5px;*/
+    /*margin: 0;*/
+    /*height: 90%;*/
+/*}*/
+
+/*/!*展示块内容--行*!/*/
+/*#result_Footer tr{*/
+    /*text-align: center;*/
+/*}*/
+
+/*/!*展示块内容行--题号*!/*/
+/*#result_Footer td{*/
+    /*height: 50px;*/
+/*}*/
+
+/*/!*展示块--未做*!/*/
+/*#result_Footer label*/
+/*{*/
+    /*font-size: 20px;*/
+    /*font-weight: normal;*/
+    /*color: lightgray;*/
+    /*width: 40px;*/
+    /*height: 40px;*/
+    /*line-height: 40px;*/
+    /*border-radius: 20px;*/
+    /*border: 1px solid lightgray;*/
+/*}*/
+
+/*/!*展示块--已选择*!/*/
+/*#result_Footer label.select*/
+/*{*/
+    /*color: black;*/
+    /*border: 1px solid black;*/
+/*}*/
+
+/*/!*展示块--正确*!/*/
+/*#result_Footer label.right*/
+/*{*/
+    /*color: #C1A252;*/
+    /*border: 1px solid #C1A252;*/
+/*}*/
+
+/*/!*展示块--错误*!/*/
+/*#result_Footer label.wrong*/
+/*{*/
+    /*color: #FF5D69;*/
+    /*border: 1px solid #FF5D69;*/
+/*}*/
+
+
+/*/!****************************** 动画 ***************************!/*/
+/*@-webkit-keyframes commitRotateAnimation {*/
+    /*0% {*/
+        /*-webkit-transform: rotateY(0deg);*/
+        /*opacity: 0.2;*/
+        /*background-color: #C1A252;*/
+    /*}*/
+    /*50% {*/
+        /*-webkit-transform: rotateY(-90deg);*/
+        /*opacity: 0.5;*/
+    /*}*/
+    /*100%{*/
+        /*-webkit-transform: rotateY(0deg);*/
+        /*opacity: 1;*/
+    /*}*/
+/*}*/
+
+/*@-webkit-keyframes disableRotateAnimation {*/
+    /*0% {*/
+        /*-webkit-transform: rotateY(0deg);*/
+        /*opacity: 0.2;*/
+        /*color:  #C1A252;*/
+        /*background-color: #C1A252;*/
+        /*border: 1px solid  #C1A252;*/
+    /*}*/
+    /*50% {*/
+        /*-webkit-transform: rotateY(-90deg);*/
+        /*color:  white;*/
+        /*background-color: white;*/
+        /*opacity: 0.5;*/
+        /*border: 1px solid  white;*/
+    /*}*/
+    /*100%{*/
+        /*-webkit-transform: rotateY(0deg);*/
+        /*color: lightgray;*/
+        /*border: 1px solid lightgray;*/
+        /*opacity: 1;*/
+    /*}*/
+/*}*/
